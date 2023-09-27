@@ -74,7 +74,7 @@
   <script type="text/javascript">
     $(".carousel").carousel();
   </script>
-
+<!-- wp_foot() = ヘッダー（footer.php）を部品として再利用できるようにする。home.phpからget_footer()関数で呼び出せる。 -->
 <?php wp_footer(); ?>
 </body>
 
