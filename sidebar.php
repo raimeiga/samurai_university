@@ -7,9 +7,13 @@
               </div>
               <div class="sidebar_categories">
                 <ul>
-                  <li><a href="#">News ニュース</a></li>
-                  <li><a href="#">Event イベント</a></li>
-                  <li><a href="#">CampusLife 侍の学生</a></li>
+                <?php
+                 $args = array(
+                 'hide_empty' => 1, // 投稿記事があるカテゴリーのみ表示する
+                 'title_li' => '',  // リストの外側に表示するタイトルと表示形式（''であれば何も表示しない）
+                );
+                 wp_list_categories( $args ); 
+                ?>
                 </ul>
               </div>
             </div>
@@ -20,9 +24,21 @@
               </div>
               <div class="sidebar_categories">
                 <ul>
-                  <li><a href="#">AWS ハンズオンセミ…</a></li>
-                  <li><a href="#">AWS ハンズオンセミ…</a></li>
-                  <li><a href="#">AWS ハンズオンセミ…</a></li>
+                <?php
+                  $args = array(
+                  'posts_per_page' => 3 //表示件数の指定
+                  );
+                  $posts = get_posts( $args );
+                  foreach ( $posts as $post ): //ループの開始
+                  setup_postdata( $post ); //記事データのセット
+                ?>
+         <li>
+           <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+         </li>
+         <?php
+           endforeach;
+           wp_reset_postdata(); //今回作成したクエリをリセットする
+         ?>
                 </ul>
               </div>
             </div>
