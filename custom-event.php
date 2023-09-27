@@ -68,7 +68,13 @@
                             </div>
                             <div>
                                <img src="<?php echo get_template_directory_uri(); ?>/images/yen-sign-solid.png" alt="" />
-                               <span>参加費：<?php echo post_custom('fee'); ?></span>
+                                <span>参加費：<?php 
+                                      if(post_custom('fee') == 0) {
+                                        echo '無料';
+                                      } else {
+                                        echo '¥' . number_format(post_custom('fee'));
+                                      }
+                                    ?></span>
                             </div>
                           </div>
                           <div class="news_post_meta">
