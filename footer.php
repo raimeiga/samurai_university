@@ -7,7 +7,7 @@
               <div class="col-lg-4 footer_col">
                 <div class="footer_section footer_about">
                   <div class="footer_logo_container">
-                    <img src="images/logo_big.png" alt="" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/logo_big.png" alt="" />
                     <a href="">
                       <div class="footer_logo_text">Samurai University</div>
                     </a>
@@ -67,14 +67,15 @@
   </div>
 
   <!--jQuery-->
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="styles/bootstrap4/popper.js"></script>
-  <script src="styles/bootstrap4/bootstrap.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.2.1.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/styles/bootstrap4/popper.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/styles/bootstrap4/bootstrap.min.js"></script>
 
   <script type="text/javascript">
     $(".carousel").carousel();
   </script>
 
+<?php wp_footer(); ?>
 </body>
 
 </html>
