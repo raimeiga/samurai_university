@@ -155,9 +155,13 @@
                    <div class="col-lg-3 col-md-4 col-sx-12">
                      <div class="calendar_border">
                        <div class="calendar_border_1">
-                         <div class="calendar_month">OCT</div>
+                       <div class="calendar_month">
+                           <?php echo post_custom('month'); ?> <!--post_custom()関数でカスタムフィールドの値を取得 -->
+                       </div>
                          <div class="calendar_day">
-                           <span>8</span>
+                         <span>
+                              <?php echo post_custom('day'); ?> <!--post_custom()関数でカスタムフィールドの値を取得 -->
+                         </span>
                          </div>
                        </div>
                      </div>
@@ -169,7 +173,11 @@
                        </a>
                      </div>
                      <div class="news_post_content">
-                       <?php 
+                     
+                     <!-- ↓ get_the_content() = 投稿内容（コンテンツ）の取得 
+                     　　 ↓ wp_trim_words() = 文字列を指定の文字数で切り取る。
+                                              切り取った文字列の末尾に別の文字を付与できる。 -->                                       
+                       <?php  
                          $content = wp_trim_words( get_the_content() ,  50, '...');
                          echo $content;
                        ?>
