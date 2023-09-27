@@ -13,7 +13,8 @@
   <link href="<?php echo get_template_directory_uri(); ?>/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/styles/main_styles.css" />
   
-  <?php wp_head(); ?>  <!-- wp_head() = ヘッダー（header.php）を部品として再利用できるようにする。get_header()関数で呼び出せる。 -->
+  <!-- wp_head() = ヘッダー（header.php）を部品として再利用できるようにする。home.phpからget_header()関数で呼び出せる。 -->
+  <?php wp_head(); ?>  
 </head>
 
 <body>
