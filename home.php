@@ -1,3 +1,4 @@
+<!-- トップ画面 -->
 <?php get_header();?>
     <!-- メインビジュアル -->
     <div class="home">
