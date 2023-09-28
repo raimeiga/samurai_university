@@ -54,7 +54,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="<?php echo home_url(); ?>/category/graduates">
+                <a class="nav-link" href="<?php echo home_url(); ?>/category/graduates"> //Wordpressのカテゴリー名(投稿＞カテゴリーのスラッグ名だと思う)
                     GRADUATES
                     <p>卒業生の声</p>
                   </a>
