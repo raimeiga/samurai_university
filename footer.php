@@ -39,6 +39,8 @@
                 <div class="footer_section footer_links">
                   <div class="footer_links_container">
                     <ul>
+                      <!-- ↓home_url()関数 = ホームページ（トップページ）のURLを取得する関数。
+                      ecoと組み合わせて<?php echo home_url(); ?>のように、出力する場合が多いのかな。。。 -->
                     <li><a href="<?php echo home_url(); ?>/category/news">ニュース</a></li>
                        <li><a href="<?php echo home_url(); ?>/category/event">イベント</a></li>
                        <li><a href="<?php echo home_url(); ?>/course">コース</a></li>

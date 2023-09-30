@@ -43,6 +43,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav flex-row ml-md-auto d-md-flex main_nav">
                 <li class="nav-item">
+                <!-- ↓home_url()関数 = ホームページ（トップページ）のURLを取得する関数。
+                 ecoと組み合わせて<?php echo home_url(); ?>のように、出力する場合が多いのかな。。。 -->
                 <a class="nav-link" href="<?php echo home_url(); ?>/category/news">
                     NEWS
                     <p>ニュース</p>
