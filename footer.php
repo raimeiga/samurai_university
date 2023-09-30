@@ -7,7 +7,8 @@
               <div class="col-lg-4 footer_col">
                 <div class="footer_section footer_about">
                   <div class="footer_logo_container">
-                  <!-- ↓ get_template_directory_uri() = WordPressで有効化しているテーマのテーマディレクトリURLを取得するための関数 -->
+                  <!-- ↓ get_template_directory_uri() = WordPressで有効化しているテーマのテーマディレクトリURLを
+                         取得するための関数。echoと組み合わせてHTML内に出力することが多い -->
                   <img src="<?php echo get_template_directory_uri(); ?>/images/logo_big.png" alt="" />
                     <a href="">
                       <div class="footer_logo_text">Samurai University</div>

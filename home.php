@@ -12,6 +12,8 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
+                <!-- ↓ get_template_directory_uri() = WordPressで有効化しているテーマのテーマディレクトリURLを
+                       取得するための関数。echoと組み合わせてHTML内に出力することが多い -->
               <img src="<?php echo get_template_directory_uri(); ?>/images/top1_1200_630.jpg" class="d-block w-100" style="background-color: #2b7b8e26" />
               <div class="carousel-caption d-none d-md-block">
               <img src="<?php echo get_template_directory_uri(); ?>/images/logo_big_slide.png" />
