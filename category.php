@@ -1,8 +1,7 @@
 <!-- 「ニュース」カテゴリーの一覧、「イベント」カテゴリーの一覧、「卒業生の声」カテゴリーの一覧-->
 <?php get_header(); ?>
 
-    <!-- Home -->
-
+<!-- Home -->
     <div class="home">
       <div class="breadcrumbs_container">
         <div class="image_header">
@@ -20,7 +19,6 @@
     </div>
 
     <!-- Course -->
-
     <div class="course">
       <div class="row content-body">
         <!-- Course -->
@@ -34,8 +32,9 @@
                 <div class="tab_panel_content">
                   <div class="tab_panel_text">
                     <!-- news loop from here-->
+                    <!-- ↓ のif文とwhile文の処理内容は、かなり下に記述してある<?php echo wp_trim_words( get_the_content() , 100, '...'); ?>という文字列をトリミングする関数 -->
                     <?php if (have_posts()) : ?>
-                       <?php while(have_posts()) : the_post(); ?>
+                    <?php while(have_posts()) : the_post(); ?>
                        <div class="news_posts_small">
                        <div class="row">
                          <div class="col-lg-2 col-md-2 col-sx-12">
@@ -71,7 +70,10 @@
                            </div>
                            <div class="news_post_meta">
                              <ul>
-                               <li>
+                               <li> 
+                                  <!-- 36行目あたりの<?php if (have_posts()) : ?>と
+                                       <?php while(have_posts()) : the_post(); ?>の
+                                       処理内容が↓ wp_trim_words（文字列トリミングの関数） -->
                                  <?php echo wp_trim_words( get_the_content() , 100, '...'); ?>
                                </li>
                              </ul>
@@ -83,8 +85,8 @@
                        </div>
                        <hr />
                      </div>
-                     <?php endwhile; ?>
-                     <?php endif; ?>
+                     <?php endwhile; ?> <!-- 37行目あたりのwhile文を閉じる記述-->
+                     <?php endif; ?>    <!-- 36行目あたりのif文を閉じる記述-->
                   </div>
                 </div>
               </div>
