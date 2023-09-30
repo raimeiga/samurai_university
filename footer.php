@@ -74,8 +74,8 @@
   <script type="text/javascript">
     $(".carousel").carousel();
   </script>
-<!-- wp_foot() = フッター（footer.php）を部品として再利用できるようにする。home.phpからget_footer()関数で呼び出せる。-->
-　　　
+<!-- wp_foot() = フッター（footer.php）を部品として再利用できるようにする関数。get_footer()関数で呼び出せる。
+　↓のように</body>の直前に記述するらしい。header.phpならば、header.php内の</head>の直前に記述。-->-->
 <?php wp_footer(); ?>
 </body>
 
