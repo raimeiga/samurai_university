@@ -7,13 +7,13 @@
   <meta name="description" content="samurai university" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-  <!-- ↓ get_template_directory_uri() = テーマディレクトリまでのパスを取得 -->
+  <!-- ↓ get_template_directory_uri() = WordPressで有効化しているテーマのテーマディレクトリURLを取得するための関数 -->
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/styles/bootstrap4/bootstrap.min.css" />
   <link href="<?php echo get_template_directory_uri(); ?>/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/styles/main_styles.css" />
   
-  <!-- wp_head() = ヘッダー（header.php）を部品として再利用できるようにする。home.phpからget_header()関数で呼び出せる。-->
-　　　　
+  <!-- wp_head() = ヘッダー（header.php）を部品として再利用できるようにする関数。get_header()関数で呼び出せる。
+　 ↓のように</head>の直前に記述するらしい。footer.phpならば、footer.php内の</body>の直前に記述。-->  
   <?php wp_head(); ?>  
 </head>
 
