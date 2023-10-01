@@ -70,10 +70,7 @@
                            </div>
                            <div class="news_post_meta">
                              <ul>
-                               <li> 
-                                  <!-- 36行目あたりの<?php if (have_posts()) : ?>と
-                                       <?php while(have_posts()) : the_post(); ?>の
-                                       処理内容が↓ wp_trim_words（文字列トリミングの関数） -->
+                                <li> <!--36行目あたりのif (have_posts()) とwhile(have_posts()) : the_post()の処理内容が↓ wp_trim_words（文字列トリミングの関数） -->
                                  <?php echo wp_trim_words( get_the_content() , 100, '...'); ?>
                                </li>
                              </ul>
