@@ -1,7 +1,6 @@
-
 <?php get_header(); ?>
-    <!-- Home -->
 
+<!-- Home -->
     <div class="home">
       <div class="breadcrumbs_container">
         <div class="image_header">
@@ -14,8 +13,9 @@
     </div>
 
     <!-- Course -->
-    <?php if (have_posts()) : //ループを実装する ?>
+    <?php if (have_posts()) : //ループを実装する ?> 
        <?php while (have_posts()) : the_post(); ?>
+       <!-- ↑のif文とwhile文の処理内容は、下のphpで囲まれたthe_title、the_content()、get_sidebar -->
          <div class="course">
            <div class="row content-body">
              <!-- Course -->
@@ -34,6 +34,7 @@
 
         <!-- Course Sidebar -->
         <div class="col-lg-4" style="background-color: #2b7b8e33">
+
     <?php get_sidebar(); ?>
         </div>
       </div>
