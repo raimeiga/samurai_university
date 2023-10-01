@@ -15,7 +15,7 @@
     <!-- Course -->
     <?php if (have_posts()) : //ループを実装する ?> 
        <?php while (have_posts()) : the_post(); ?>
-       <!-- ↑のif文とwhile文の処理内容は、下のphpで囲まれたthe_title、the_content()、get_sidebar -->
+       <!--↑のif文とwhile文の処理内容は、下のphpで囲まれたthe_title、the_content()、get_sidebar -->
          <div class="course">
            <div class="row content-body">
              <!-- Course -->
