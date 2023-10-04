@@ -39,10 +39,14 @@
                         <div class="col-lg-2 col-md-2 col-sx-12">
                           <div class="calendar_news_border">
                             <div class="calendar_news_border_1">
-                            <div class="calendar_month"><?php echo get_post_time('F'); ?></div>
+                            <div class="calendar_month"><?php echo get_post_time('F'); ?></div> 
+                                 <!-- ↑ get_post_time()関数＝投稿の公開日時を取得する関数。引数に’F’を設定
+                                      すると、英語表記の月（January など）が取得できる -->
                               <div class="calendar_day">
                               <span><?php echo get_the_date('d'); ?></span><span>日</span>
                               </div>
+                                       <!-- ↑ get_the_date()関数＝投稿の公開日時を取得する関数。
+                                              引数に’d’を設定すると、日付の数字が取得できる -->
                             </div>
                           </div>
                           <div class="calendar_hour"><?php echo post_custom('time'); ?></div>
