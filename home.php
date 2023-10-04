@@ -280,7 +280,7 @@
           <div class="col-lg-4 course_col">
             <div class="course">
               <div class="course_image">
-              <?php the_post_thumbnail();?>
+               <?php the_post_thumbnail();?>  <!-- ←←←←←←サムネイル画像を取得する関数 -->
               </div>
               <div class="course_body">
                 <h3 class="course_title">
