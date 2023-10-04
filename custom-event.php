@@ -11,7 +11,6 @@
    <?php while (have_posts()) : the_post() ; ?>
 
     <!-- Home -->
-
     <div class="home">
       <div class="breadcrumbs_container">
         <div class="image_header">
@@ -73,8 +72,9 @@
                                         echo '無料';
                                       } else {
                                         echo '¥' . number_format(post_custom('fee'));
-                                      }
-                                    ?></span>
+                                      }   /*number_format()関数＝引数が1つだけ渡された場合に、その数字に対して1000の位ごと
+                                             にカンマを追加して、小数なしでフォーマットするPHPの関数*/
+                                      ?></span>
                             </div>
                           </div>
                           <div class="news_post_meta">
