@@ -294,7 +294,7 @@
               </div>
               <div class="course_footer">
                 <div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
-                  <div class="course_price ml-auto">詳細を見る</div>
+                <div class="course_price ml-auto"><a href="<?php the_permalink(); ?>">詳細を見る</a></div>
                 </div>
               </div>
             </div>
