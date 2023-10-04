@@ -34,8 +34,10 @@
                     </p>
                   </div>
                   <div class="campus_footer_content d-flex flex-row align-items-center justify-content-start">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/clock.png"><span><?php the_time('Y年n月j日'); ?></span
-                  </div>
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/clock.png"><span><?php the_time('Y年n月j日'); ?></span>
+                   </div> <!--the_time()関数 = 記事の作成年月日を出力  フォーマット文字列としてY年n月j日を渡せば、
+                              アルファベット部分をそれぞれ以下のように置き換えて出力。
+                              『Y』：4桁の西暦を表示　『n』：先頭に0をつけない月を表示　『j』：先頭に0をつけない日を表示 -->
                   <hr>
                   <div class="social_share">
                      <img src="<?php echo get_template_directory_uri(); ?>/images/facebook-square-brands.png" alt="">
